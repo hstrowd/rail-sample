@@ -1,0 +1,7 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "j-toker": "latest",
+    "moment": "latest"
+  }
+}

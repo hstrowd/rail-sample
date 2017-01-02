@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$spacer: 1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap/theme";
+
+.header-spacer {
+    margin-top: 60px;
+}
+
+
+.meals .meal-date {
+    border-radius: $spacer * 2;
+    margin: $spacer * 2;
+    padding: $spacer;
+}
+.meals .daily-limit-under {
+    background-color: #c6e5ff;
+}
+.meals .daily-limit-in-progress {
+    background-color: #c6e5ff;
+}
+.meals .daily-limit-over {
+    background-color: #c6e5ff;
+}
+.meals .meal-date .date-title {
+    margin: 0 ($spacer * 3);
+}
+.meals .meal-date .badge {
+    margin: ($spacer * 1.5) 0;
+}
+
+.meal-preview {
+    background-color: #f9f9f9;
+    border-radius: $spacer;
+    margin: $spacer;
+    padding: $spacer;
+}
+.meal-preview .description {
+    margin: 0 $spacer;
+}
+
